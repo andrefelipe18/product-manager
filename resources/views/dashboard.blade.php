@@ -8,13 +8,12 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="grid grid-rows-2 grid-flow-col gap-3">
-                    <div>
-                        <livewire:dash.users/>
-                    </div>
-                    <div>
-                        <livewire:dash.products/>
-                    </div>
+                <div class="grid grid-col-2 grid-flow-col gap-3">
+                    
+                    <livewire:dash.users/>
+                    
+                    <livewire:dash.products/>
+                    
                 </div>
             </div>
         </div>
