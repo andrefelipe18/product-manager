@@ -1,5 +1,5 @@
 <div>
-  <table>
+  <table class="p-6 text-gray-900 dark:text-gray-100">
     <thead>
         <tr class="bg-gray-100 dark:bg-gray-600">
             <th class="px-4 py-2">ID</th>
