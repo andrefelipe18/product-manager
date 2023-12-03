@@ -5,22 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ProductSupplier extends Model
+class Category extends Model
 {
     use HasFactory;
 
-    protected $fillable=[
-        'product_id',
-        'supplier_id'
-    ];
+    protected $filiable = ['name'];
 
     public function products()
     {
         return $this->belongsToMany(Product::class);
-    }
-
-    public function suppliers()
-    {
-        return $this->belongsToMany(Supplier::class);
     }
 }
