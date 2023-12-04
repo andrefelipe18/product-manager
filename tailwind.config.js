@@ -18,4 +18,16 @@ export default {
     },
 
     plugins: [forms, require('daisyui')],
+
+    daisyui: {
+        themes: [
+            {
+                dark: {
+                    ...require('daisyui/src/theming/themes')['dark'],
+                    'primary': '#4F46E5',
+                    'base-100': '#1f2937',
+                },
+            },
+        ],
+    },
 };

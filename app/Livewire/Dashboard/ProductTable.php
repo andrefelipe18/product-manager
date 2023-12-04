@@ -1,13 +1,10 @@
 <?php
 
-namespace App\Livewire\Dash;
+namespace App\Livewire\Dashboard;
 
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
 use App\Models\Product;
-use Illuminate\Support\Facades\Date;
-use Rappasoft\LaravelLivewireTables\Views\Filters\DateFilter;
-use Rappasoft\LaravelLivewireTables\Views\Filters\MultiSelectDropdownFilter;
 
 class ProductTable extends DataTableComponent
 {

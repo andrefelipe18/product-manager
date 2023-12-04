@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\Dash;
+namespace App\Livewire\Dashboard;
 
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
@@ -19,6 +19,8 @@ class UserTable extends DataTableComponent
     {
         return [
             Column::make("Id", "id")
+                ->sortable(),
+            Column::make("Role", "role")
                 ->sortable(),
             Column::make("Name", "name")
                 ->sortable(),
