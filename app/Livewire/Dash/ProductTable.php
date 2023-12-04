@@ -18,7 +18,7 @@ class ProductTable extends DataTableComponent
         $this->setPrimaryKey('id')
             ->setTableRowUrl(function ($row) {
                 return route('dashboard', $row);
-            });
+            }); 
         
         $this->setSearchEnabled();
     }
