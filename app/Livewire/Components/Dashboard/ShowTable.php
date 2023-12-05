@@ -3,23 +3,32 @@
 namespace App\Livewire\Components\Dashboard;
 
 use Livewire\Component;
+use App\Livewire\Dashboard;
 
 class ShowTable extends Component
 {
-    public $showFormComponent;
 
-    public $table = 'Dashboard.UserTable';
-
-    protected $listeners = ['refreshComponent' => '$refresh'];
-
-    protected $tables = [
-        'Dashboard.UserTable',
-        'Dashboard.ProductTable',
+    public $components = [
+        [   
+            'name' => 'Usuários',
+            'path' => 'Dashboard.UserTable',
+        ],
+        [
+            'name' => 'Produtos',
+            'path' => 'Dashboard.ProductTable',
+        ],
     ];
+
+    public $table;
 
     public function changeTable($table)
     {
         $this->table = $table;
+    }
+
+    public function mount()
+    {
+        $this->table = 0;
     }
     
     public function render()
